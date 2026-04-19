@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="AI for Earth is an educational website about using AI carefully, responsibly, and with attention to environmental and human impact."
+    />
+    <title>AI for Humanity - AI for Earth</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="ambient ambient-a"></div>
+    <div class="ambient ambient-b"></div>
+    <div class="ambient ambient-c"></div>
+
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="AI for Humanity - AI for Earth home">
+        <span class="brand-mark">A</span>
+        <span class="brand-text">AI for Humanity - AI for Earth</span>
+      </a>
+      <nav class="nav">
+        <a href="#why">Why it matters</a>
+        <a href="#use">Use carefully</a>
+        <a href="#actions">Actions</a>
+      </nav>
+      <a class="button button-small" href="#pledge">Take the pledge</a>
+    </header>
+
+    <main id="home">
+      <section class="hero section">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Minimum tokens. Minimum cost. Maximum care.</p>
+          <h1>AI for Humanity - AI for Earth.</h1>
+          <p class="lead">
+            AI can help people learn, create, and solve problems. But every prompt costs energy,
+            time, and resources. We use our own principles, keep prompts intentional, and avoid
+            waste to protect Earth and humanity.
+          </p>
+          <div class="hero-actions">
+            <a class="button" href="#use">Learn the basics</a>
+            <a class="button button-ghost" href="#scenarios">See examples</a>
+          </div>
+        </div>
+
+        <aside class="hero-panel reveal">
+          <div class="panel-label">Core idea</div>
+          <p class="panel-quote">
+            Every prompt is a choice. Every model call has a cost. Responsible AI use means
+            asking whether the answer is worth the resources.
+          </p>
+          <ul class="panel-list">
+            <li>Use smaller tools when they are enough.</li>
+            <li>Reuse outputs instead of regenerating endlessly.</li>
+            <li>Check impact on people, culture, and ecology.</li>
+          </ul>
+        </aside>
+      </section>
+
+      <section id="why" class="section section-split">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Why it matters</p>
+          <h2>AI is not free. It uses electricity, water, hardware, and human attention.</h2>
+        </div>
+        <div class="cards">
+          <article class="card reveal">
+            <h3>Environmental load</h3>
+            <p>
+              Repeated generation, oversized models, and unnecessary experimentation can
+              multiply energy demand. The most sustainable AI is often the simplest tool that
+              solves the task.
+            </p>
+          </article>
+          <article class="card reveal">
+            <h3>Human impact</h3>
+            <p>
+              AI can reinforce bias, produce misleading content, and encourage overreliance.
+              Human judgment still matters for truth, dignity, and accountability.
+            </p>
+          </article>
+          <article class="card reveal">
+            <h3>System cost</h3>
+            <p>
+              Every trend of "just one more prompt" adds up across data centers, devices, and
+              supply chains. Tiny actions become large when millions of people repeat them.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="use" class="section lens-section">
+        <div class="section-heading reveal">
+          <p class="eyebrow">How to use AI carefully</p>
+          <h2>Choose your lens: individual user, team lead, or educator.</h2>
+          <p class="section-copy">
+            The advice shifts slightly by role, but the principle stays the same: use AI when it
+            creates real value, and stop when it becomes wasteful or risky.
+          </p>
+        </div>
+
+        <div class="lens-shell reveal">
+          <div class="lens-tabs" role="tablist" aria-label="Audience selector">
+            <button class="lens-tab is-active" type="button" data-lens="individual">Individual</button>
+            <button class="lens-tab" type="button" data-lens="team">Team</button>
+            <button class="lens-tab" type="button" data-lens="educator">Educator</button>
+          </div>
+          <div class="lens-content">
+            <div>
+              <p class="panel-label" id="lens-label">For individuals</p>
+              <h3 id="lens-title">Use the smallest useful tool.</h3>
+              <p id="lens-description">
+                If a search engine, note, or human conversation can answer the question, use that
+                first. Save generative AI for tasks where its unique strengths matter.
+              </p>
+            </div>
+            <ul class="lens-list" id="lens-list" aria-live="polite"></ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="scenarios" class="section">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Examples</p>
+          <h2>Good AI habits are easier to learn through scenarios.</h2>
+        </div>
+        <div class="scenario-grid">
+          <article class="scenario reveal">
+            <span class="scenario-tag">Question</span>
+            <h3>"Should I ask AI to rewrite this email five times?"</h3>
+            <p>
+              Usually no. Set a goal, write one draft, edit it yourself, and only regenerate if
+              there is a clear reason.
+            </p>
+          </article>
+          <article class="scenario reveal">
+            <span class="scenario-tag">Research</span>
+            <h3>"Can AI summarize a topic for me?"</h3>
+            <p>
+              Yes, but verify the claims with reliable sources. Treat AI as a helper, not a final
+              authority.
+            </p>
+          </article>
+          <article class="scenario reveal">
+            <span class="scenario-tag">Creation</span>
+            <h3>"Do I need a generated image for every post?"</h3>
+            <p>
+              Not always. A cleaner design, a photo you already own, or a text-first format may be
+              enough.
+            </p>
+          </article>
+          <article class="scenario reveal">
+            <span class="scenario-tag">Team use</span>
+            <h3>"How do we reduce waste at scale?"</h3>
+            <p>
+              Define when AI is allowed, keep prompts purposeful, avoid duplicate work, and choose
+              efficient models by default.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="actions" class="section section-split">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Practical action</p>
+          <h2>Use this checklist before you hit generate.</h2>
+        </div>
+        <div class="checklist reveal">
+          <label class="check-item"><input type="checkbox" checked /> Is this task worth the compute?</label>
+          <label class="check-item"><input type="checkbox" checked /> Could a simpler tool do it?</label>
+          <label class="check-item"><input type="checkbox" /> Will I verify the result?</label>
+          <label class="check-item"><input type="checkbox" /> Could I reuse or refine instead of regenerating?</label>
+          <label class="check-item"><input type="checkbox" /> Have I considered people and environment impacts?</label>
+        </div>
+      </section>
+
+      <section id="pledge" class="section pledge reveal">
+        <div>
+          <p class="eyebrow">Pledge</p>
+          <h2>Choose responsible AI by default.</h2>
+          <p class="section-copy">
+            This site is meant to spark habits: think critically, use less when less is enough,
+            and keep Earth and humanity in the loop.
+          </p>
+        </div>
+        <button class="button" id="pledge-button" type="button">I will use AI more carefully</button>
+        <p class="pledge-status" id="pledge-status" aria-live="polite"></p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>AI for Earth</p>
+      <p>Built as a local prototype for education and testing.</p>
+      <p id="year"></p>
+    </footer>
+  </body>
+</html>
