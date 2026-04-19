@@ -25,10 +25,16 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
+      - name: Prepare site files
+        run: |
+          mkdir -p site
+          cp index.html styles.css script.js .nojekyll site/
+
       - name: Upload site
         uses: actions/upload-pages-artifact@v4
         with:
-          path: .
+          path: site
+          include-hidden-files: true
 
   deploy:
     environment:
